@@ -1,0 +1,63 @@
+style.css 
+html {
+  height: 100%;
+  width: 100%;
+  margin:0;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.parent {
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(12, 1fr);
+grid-column-gap: 1px;
+grid-row-gap: 1px;
+
+.div1 { 
+  grid-area: 1 / 1 / 2 / 13;
+  border: 1px solid black;
+  margin: 4px;
+  background-image: linear-gradient(to left, lightblue, white);
+}
+.div2 { 
+  grid-area: 2 / 1 / 13 / 13; 
+  border: 1px solid red;
+  background-image: linear-gradient(to bottom, darkred, white);
+}
+  h3 { 
+    font-family: "Lucida Handwriting", cursive;
+    color: blue;
+    text-align: center;
+  }
+
+  .button1 {
+    color: darkred;
+  }
+  .button2 {
+    color: violet;
+  }
+  .button3 {
+    color: green;
+  }
+  .button4 {
+    color: purple;
+  }
+  .insidered {
+    height:230px;
+    width:180px;
+    margin: 80px;
+    border:solid red;
+   }
+  .pic {
+    height: 100%;
+    width: 100%;
+  }
+
+  .picdiv {
+    height: 80px;
+    width: 80px;
+    padding: 20px;
+  }
