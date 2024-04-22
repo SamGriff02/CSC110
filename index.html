@@ -2,27 +2,51 @@
 <html>
 
 <head>
-   <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  
+
   <div class="parent">
   <div class="div1"> <h3> Sam's Resume </h3> </div>
   <div class="div2"> 
-    <button class="button1"> Jobs </button> 
-    <button class="button2">Skills</button>
-    <button class="button3">Hobbies</button>
-    <button class="button4"> Contact </button>
-    <div class="insidered">
-      <image class="pic" src="IMG_20240114_110318.jpg"></image>
+    <button class="button1" onclick="showPage('insidered')"> Jobs </button> 
+    <button class="button2"onclick="showPage('insidejobs')">Skills</button>
+    <button class="button3" onclick="showPage('insidehobbies')">Hobbies</button>
+    <button class="button4" onclick="showPage('insidecontact')"> Contact </button>
+    <button class="button5" onclick="showPage('insideabout')"> About </button>
+    <i class="fa fa-bars" onclick="showPage('icon')"></i>
+
+    <div id="insidered" class="show">
+      <h2> Jobs: Team Lead-ChikFilA <br>
+        Server-Lexington Golf & Country Club.<br>
+        Rural Carrier-Ogden USPS
+      </h2>
+      <image class="pic3" src="chik.png"></image>
     </div>
+   
+    <div id="icon" class="hide"><h1>This website is for a school project.</h1></div>
+    <div id="insideabout" class="hide"> <p>My name is Sam. I am 21 years old and am a fulltime student at SVU. I have moved a lot and have a lot of different job experiences. I am currently studying Theatre and Creative Writing.</p> </div>
+   
+    <div id="insidejobs" class="hide"> 
+    <h4>Skills: Productive, Friendly, Timely, Bilingual, Hard working.</h4>
+      <image class="pic4" src="skil.png"></image>
+    </div>
+    <div id="insidehobbies" class="hide"><h5>Hobbies: Writing, Singing, Nature walks, Theatre, Swimming, Art.</h5>
+    <image class="pic1" src="hobbies.jpg"></image>
+    </div>
+    <div id="insidecontact" class="hide"><h6> CONTACT:<br> (801)-739-5299 OR samgriffywiffy@gmail.com</h6>
+    <image class="pic2" src="contact.png"></image>
+    </div>
+
   </div>
   </div>
-  
+  <script src="script.js"></script>
 </body>
 
 </html>
