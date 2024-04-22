@@ -1,4 +1,3 @@
-style.css 
 html {
   height: 100%;
   width: 100%;
@@ -22,19 +21,25 @@ grid-row-gap: 1px;
   margin: 4px;
   background-image: linear-gradient(to left, lightblue, white);
 }
-.div2 { 
-  grid-area: 2 / 1 / 13 / 13; 
-  border: 1px solid red;
-  background-image: linear-gradient(to bottom, darkred, white);
+  .div2 { 
+    grid-area: 2 / 1 / 13 / 13; 
+    border: 1px solid red;
+    background-image: linear-gradient(to bottom, darkred, white);
 }
   h3 { 
     font-family: "Lucida Handwriting", cursive;
     color: blue;
     text-align: center;
   }
-
+button:hover {
+  transition: .3s;
+  cursor: pointer;
+  box-shadow: 2px 2px black;
+  border-radius: 50%;
+}
   .button1 {
     color: darkred;
+
   }
   .button2 {
     color: violet;
@@ -45,15 +50,11 @@ grid-row-gap: 1px;
   .button4 {
     color: purple;
   }
-  .insidered {
-    height:230px;
-    width:180px;
-    margin: 80px;
-    border:solid red;
+
    }
   .pic {
-    height: 100%;
-    width: 100%;
+    height: 20%;
+    width: 20%;
   }
 
   .picdiv {
@@ -61,3 +62,37 @@ grid-row-gap: 1px;
     width: 80px;
     padding: 20px;
   }
+
+  .show {
+   display: flex; 
+  }
+  .hide {
+    display: none;
+  }
+
+  .pic1 {
+    height: 50%;
+    width: 50%;
+  }
+  .pic2 {
+    height: 50%;
+    width: 50%;
+  
+    }
+h4 {
+  font-family: "Times New Roman", serif;
+  color: pink;
+  
+}
+h5 {
+  font-family: "Times New Roman", serif;
+  color: lightgreen;
+}
+h6 {
+  font-family: 'Courier New', Courier, monospace;
+  color: violet;
+}
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
